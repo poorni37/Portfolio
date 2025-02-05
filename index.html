@@ -33,7 +33,7 @@
     <div class="home-content">
       <h3>Hi, Myself</h3>
       <h1>Poornima</h1>
-      <h3>And I'm a <span>Web Designer</span> </h3>
+      <h3>And I'm a <span>Frontend Developer</span> </h3>
       <p>My Expertise includes fronend technologies like HTML, CSS, Javascript & Bootstrap along with a strong understanding of Responsive Webdesigning & Interaction Development</p>
       <div class="social-media">
         <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -55,7 +55,7 @@
     </div>
     <div class="about-content">
       <h2 class="heading">About <span>Me</span></h2>
-      <h3>Web Designer</h3>
+      <h3>Frontend Developer</h3>
       <p>In my roll, I've developed a website using customized templates like changing layouts, color scehems, typograpy, Add images & client approved contents. And implemented features like contact forms, embedded maps & call to action buttons that enhance user experience across various devices. I've also conducted usability testing & crossbrowser testing to enhance optimal performance . And gathered feedback to ensure their needs were met effectively.</p>
       <a href="#" class="btn">Read More</a>
     </div>
@@ -82,6 +82,12 @@
       <i class="fa-brands fa-js"></i>
       <h3>Java Script</h3>
       <p>JavaScript is a versatile, lightweight programming language primarily used to create dynamic and interactive content on websites, running on both the client and server sides.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+    <div class="skills-box">
+      <i class="fa-brands fa-react"></i>
+      <h3>React Js</h3>
+      <p>ReactJS is a popular JavaScript library for building dynamic, component-based user interfaces with efficient rendering using a virtual DOM, ideal for creating fast, responsive web applications.</p>
       <a href="#" class="btn">Read More</a>
     </div>
     <div class="skills-box">
@@ -180,7 +186,7 @@
 <!--Footer Design-->
 <footer class="footer">
   <div class="footer-text">
-    <p>Copyright &copy; 2024 by @poornima | All Rights Reserved.</p>
+    <p>Copyright &copy; <span id="year"></span> by @poornima | All Rights Reserved.</p>
   </div>
   <div class="footer-iconTop">
     <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
@@ -189,9 +195,13 @@
 </body>
 <!--Scroll reveal js-->
 <script src="https://unpkg.com/scrollreveal"></script>
-<!--Typed js-->
+<!--Typed js--> 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="main.js"></script>
+<script>
+  // Get the current year and display it in the span with id "year"
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 </html>
 
